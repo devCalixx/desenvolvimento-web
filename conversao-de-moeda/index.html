@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+        <div class="converter">
+        <input type="number" id="valor" placeholder="Valor" min="0">
+        
+        <select id="de">
+            <option value="USD">Dólar (USD)</option>
+            <option value="BRL">Real (BRL)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra (GBP)</option>
+            <option value="JPY">Iene (JPY)</option>
+            <option value="CHF">Franco (CHF)</option>
+        </select>
+
+        <span>para</span>
+
+        <select id="para">
+            <option value="USD">Dólar (USD)</option>
+            <option value="BRL">Real (BRL)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra (GBP)</option>
+            <option value="JPY">Iene (JPY)</option>
+            <option value="CHF">Franco (CHF)</option>
+        </select>
+
+        <button onclick="converter()">Converter</button>
+
+        <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
